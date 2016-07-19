@@ -1,11 +1,8 @@
-# Creates a variable of string for value snow
-snow = "snow"
-
 # Prints string mary had a little lamb
 puts "Mary had a little lamb"
 
 # Prints string Its fleece was white as combined with value from snow variable
-puts "It's fleece was white as #{snow}"
+puts "It's fleece was white as #{'snow'}"
 
 # Prints string and everywhere that maery went
 puts "And everywhere that Mary went"
