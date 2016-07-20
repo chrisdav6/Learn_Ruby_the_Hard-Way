@@ -1,3 +1,5 @@
+# Exercise 18: Names, Variables, Code, Functions
+
 # Creates a ruby function which takes 2 arguments then prints them out ** not a good method for arguments
 def print_two(*args)
 	arg1, arg2 = args
