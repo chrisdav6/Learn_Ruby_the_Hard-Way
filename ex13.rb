@@ -1,3 +1,5 @@
+# Exercise 13: Parameters, Unpacking, Variables
+
 # Creates arguments to run the script ex. ruby ex12.rb first second third fourth
 first, second, third, fourth = ARGV
 
