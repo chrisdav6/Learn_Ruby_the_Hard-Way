@@ -1,3 +1,5 @@
+# Exercise 12: Prompting People for Numbers
+
 # Prints to the screen
 print "Give me a number"
 
