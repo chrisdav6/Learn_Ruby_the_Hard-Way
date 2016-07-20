@@ -16,7 +16,7 @@ target = open(filename, 'w')
 # Removes all text from the file
 puts "Truncating the file. Goodbye!"
 # Don't really need the truncate function if you open a file with the w flag
-#target.truncate(0)
+target.truncate(0)
 
 puts "Now i'm going to ask you for 3 lines"
 
