@@ -1,3 +1,5 @@
+# Exercise 6: Strings and Text
+
 # Creates a variable for the amount of types of people
 types_of_people = 10
 
