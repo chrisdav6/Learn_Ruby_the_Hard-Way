@@ -1,3 +1,5 @@
+# Exercise 5: More Variables and Printing
+
 name = "Christopher Davis"
 age = 39 #not a lie!
 height = 72 #inches
