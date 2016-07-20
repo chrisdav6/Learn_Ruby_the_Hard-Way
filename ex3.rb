@@ -1,3 +1,5 @@
+# Exercise 3: Numbers and Math
+
 # This will print the chicken string
 puts "I will now count my chicken dingus!"
 
