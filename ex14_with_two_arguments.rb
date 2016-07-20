@@ -1,3 +1,5 @@
+# Exercise 14: Prompting and Passing using two arguments
+
 # Stores the first name and last name arguments ex. ruby ex14.rb Chris Davis
 firstname, lastname = ARGV
 

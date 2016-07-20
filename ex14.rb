@@ -1,3 +1,5 @@
+# Exercise 14: Prompting and Passing
+
 # Stores the first argument in a variable ex. ruby ex14.rb Chris
 user_name = ARGV.first
 
