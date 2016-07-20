@@ -1,3 +1,5 @@
+# Exercise 15: Reading Files
+
 # Creates an filename argument to use when running program ex. ruby ex15.rb ex15_sample.txt
 filename = ARGV.first
 
