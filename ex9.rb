@@ -1,3 +1,5 @@
+# Exercise 9: Printing, Printing, Printing
+
 # Here is some new strange stuff, remember type it exactly.
 
 days = "Mon Tue Wed Thur Fri Sat Sun"
