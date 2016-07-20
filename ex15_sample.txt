@@ -1,0 +1,3 @@
+This is stuff i typed into the sample file.
+It is actually pretty cool, since we are going to load it into our ruby program.
+Sweet!
