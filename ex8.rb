@@ -1,3 +1,5 @@
+# Exercise 8: Printing, Printing
+
 # Creates the formatting scheme
 formatter = "%{first} %{second} %{third} %{fourth}"
 
