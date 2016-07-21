@@ -33,7 +33,7 @@ end
 
 # Creates a variable to use as the function argument
 start_point = 10000
-#Creates a varible that holds the value returned from the function using our argument variable
+#Creates a variable that holds the value returned from the function using our argument variable
 beans, jars, crates = secret_formula(start_point)
 
 # Prints out a line including the value returned from the function
