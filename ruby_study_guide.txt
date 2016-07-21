@@ -1,0 +1,148 @@
+Ruby Study Guide
+
+Puts & Print - The puts (short for "put string") and print commands are both used to display
+the results of evaluating Ruby code. The primary difference between them is that puts adds a
+newline after executing, and print does not.
+
+# Octothorpe - used for making a sinle line comment
+
+
+Arithmatic Operators
+
++ Plus - Addition, Adds values on either side of the operator
+
+- Minus - Subtraction, Subtracts right hand operand from left hand operand
+
+/ Slash - Division, Divides left hand operand by right hand operand
+
+* Asterisk - Multiplication, Multiplies values on either side of the operator
+
+% Percent - Modulus, Divides left hand operand by right hand operand and returns remainder
+
+** Exponent - Performs exponential (power) calculation on operators
+
+
+Comparison Operators
+
+== Double-equal - Checks if the value of two operands are equal or not, if yes then condition becomes true
+
+!= Not-equal - Checks if the value of two operands are equal or not, if values are not equal then condition becomes true
+
+< Less-than - Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true
+
+> Greater-than - Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true
+
+<= Less-than-equal - Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true
+
+>= Greater-than-equal - Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true
+
+<=> Combined - Returns 0 if first operand equals second, 1 if first operand is greater than the second and -1 if first operand is less than the second
+
+=== Triple equal - Used to test equality within a when clause of a case statement. has absolutely nothing whatsoever to do with equality.
+					In particular, it violates pretty much every law that you would ecpect an equality operator to follow. And it does that
+					very much by design. The comparison of the left and right sides of === changes, depending on what types the objects are; It's a context-sensitive comparison. You need to study and experiment with case/when or === in IRB to see it in action. 1===1 compares two Fixnum for equal values. (1..3)===1 looks in the range to see if 1 is included. It's much more than a simple equality test and because of the context-sensitive nature of it you can't necessarily substitute === and ==
+
+
+Assignment Operators
+
+= Single-equal - Simple assignment operator, Assigns values from right side operands to left side operand
+
++= Add AND - It adds right operand to the left operand and assign the result to left operand c += a is equivalent to c = c + a
+
+-= Subtract AND - It subtracts right operand from the left operand and assign the result to left operand c -= a is equivalent to c = c - a
+
+*= Multiply AND - It multiplies right operand with the left operand and assign the result to left operand c *= a is equivalent to c = c * a
+
+/= Divide AND - It divides left operand with the right operand and assign the result to left operand c /= a is equivalent to c = c / a
+
+%= Modulus AND - It takes modulus using two operands and assign the result to left operand c %= a is equialent to c = c % a
+
+**= Exponent AND - Performs exponential (power) calculation on operators and assign value to the left operand c **= a is equivalent to c = c ** a
+
+
+
+"" Double Quotes - Used to define a string value ex. "This is a string"
+
+#{} Octothorpe Curly Bracket Sequence - Used to embed variable in a string ex. "This is a string #{variable} and this is the end of the string"
+
+""" Triple Double Quotes - Allows you to enter a string with line breaks and variable values ex. """This is a string and a #{variable}""" output = This is a string and a variables value
+
+''' Triple Single Quotes - Allows you to enter a string with line breaks and variables will not be computed ex. '''This is a string and a #{variable}''' output = This is a string and a #{variable}
+
+Escape Sequences
+
+\ Backslash Key - Used to escape a character from a string
+
+\\ Backslash - Add a backslash to string ex. "Added a \\ to a string" output = Added a \ to a string
+
+\' Single-quote
+
+\" Double-quote
+
+\a Bell or Alert - ASCII bell (BEL)
+
+\b Backspace - ASCII backspace (BS)
+
+\f Formfeed - ASCII formfeed (FF)
+
+\n New line - ASCII linefeed (LF) Added to a string creates a new line
+
+\r Carriage return - ASCII Carriage Return (CR)
+
+\t Tab - ASCII Horizontal Tab (TAB)
+
+\uxxxx - Character with 16bit hex value xxxx (Unicode only)
+
+\v Vertical Tab - ASCII Vertical Tab (VT)
+
+\ooo - Character with octal value ooo
+
+\xhh - Cahracter with hex value hh
+
+\s Space
+
+Gets - Prompts the user for an input, it will include the line break when the user hits the enter key ex. "Chris\n"
+
+Gets.chomp - Prompts users for input and returns their input in the form of a string! 
+			 And of course you can convert the string to an integer via to_i or float via to_f
+			 The chomp part of gets.chomp, CHOMPS off the newline char you get from the user
+
+.to_s - Converts integer to a string ex. 42.to_s = "42"
+
+.to_i - Converts string to integer ex. "42".to_i = 42
+
+.to_f - Converts string or number to a floating point number
+
+		Examples...
+
+		number = "42".to_i
+		print number
+		puts number.instance_of? Fixnum
+		Output = 42true
+
+
+		number2 = 43.to_s
+		print number2
+		puts number2.instance_of? String
+		Output = 43true
+
+		number3 = "44".to_f
+		print number3
+		puts number3.instance_of? Float
+		Output = 44.0true
+
+		number4 = 45.to_f
+		print number4
+		puts number4.instance_of? Float
+		Output = 45.0true
+
+ARGV - Argument Variable, this holds the arguments you pass to your ruby script when you run it.
+
+	Ex. first, second, third, fourth = ARGV
+
+		myRubyScript.rb first second third fourth
+
+$stdin.gets.chomp - Prompts users for input and returns their input in the form of a string cannot be used with ARGV
+					By default, you can use $stdin.gets.chomp and gets.chomp in a script that doesn’t use ARGV. 
+					But, it’s really unnecessary to use $stdin in these cases
+
