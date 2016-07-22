@@ -1,20 +1,13 @@
-number = "42".to_i
-print number
-puts number.instance_of? Fixnum
-Output = 42true
+def secret_formula(started)
+  jelly_beans = started * 500
+  jars = jelly_beans / 1000
+  crates = jars / 100
+  return jelly_beans, jars, crates
+end
 
 
-number2 = 43.to_s
-print number2
-puts number2.instance_of? String
-Output = 43true
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
 
-number3 = "44".to_f
-print number3
-puts number3.instance_of? Float
-Output = 44.0true
-
-number4 = 45.to_f
-print number4
-puts number4.instance_of? Float
-Output = 45.0true
+puts "With a starting point of: #{start_point}"
+puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates."
